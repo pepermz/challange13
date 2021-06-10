@@ -10,6 +10,10 @@ class Product extends Model {}
 Product.init(
   {
     // define columns
+    product_name:DataTypes.STRING,
+    price:DataTypes.DECIMAL,
+    stock:DataTypes.INTEGER,
+    category_id:DataTypes.INTEGER,
   },
   {
     sequelize,
